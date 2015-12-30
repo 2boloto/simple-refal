@@ -9,6 +9,8 @@ $ENTRY Apply {
 }
 
 $ENTRY Map {
+  s.Fn t.Next e.Tail = <s.Fn t.Next> <Map s.Fn e.Tail>;
+
   t.Fn t.Next e.Tail = <Apply t.Fn t.Next> <Map t.Fn e.Tail>;
 
   t.Fn = ;
