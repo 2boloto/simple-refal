@@ -26,6 +26,9 @@ $ENTRY Reduce {
 }
 
 $ENTRY Fetch {
+  e.Argument s.Function =
+    <s.Function e.Argument>;
+
   e.Argument t.Function =
     <Apply t.Function e.Argument>;
 }
